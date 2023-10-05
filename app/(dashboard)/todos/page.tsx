@@ -1,7 +1,7 @@
 import TodoList from '@/components/TodoList'
 import db from '@/util/db'
 
-const getData = async () => {
+const getData = async () => { 
   const todos = await db.todo.findMany({})
   return todos
 }
